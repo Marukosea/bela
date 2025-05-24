@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    padding: 36px 32px 32px 32px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+input[type="text"] {
+    width: 320px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 17px;
+    margin-right: 12px;
+}
+
+button {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 6px;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+#results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.result-item {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-item:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.16);
+}
+
+.result-image {
+    max-width: 100%;
+    max-height: 160px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    object-fit: cover;
+    background: #f4f4f4;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+
+.result-filename {
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #222;
+    word-break: break-all;
+}
+
+.result-download {
+    display: inline-block;
+    margin-top: 4px;
+    padding: 7px 18px;
+    background: #4CAF50;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.97em;
+    transition: background 0.2s;
+}
+
+.result-download:hover {
+    background: #388e3c;
+}
+.result-pdf {
+    border-radius: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    background: #f4f4f4;
+}
